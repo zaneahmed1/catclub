@@ -51,7 +51,8 @@ export default function CatEditForm() {
 
   return (
     <div className="Edit">
-      <form onSubmit={handleSubmit}>
+<form onSubmit={handleSubmit}>
+        <div className='form-group'>
         <label htmlFor="name">Name:</label>
         <input
           id="name"
@@ -61,6 +62,8 @@ export default function CatEditForm() {
           placeholder="Name of Cat"
           required
         />
+        </div>
+        <div className='form-group'>
         <label htmlFor="parent_name">Parent/Guardian Name:</label>
         <input
           id="parent_name"
@@ -70,6 +73,8 @@ export default function CatEditForm() {
           placeholder="Name of Parent/Guardian"
           required
         />
+         </div>
+         <div className='form-group'>
         <label htmlFor="age">Age:</label>
         <input
           id="age"
@@ -79,6 +84,8 @@ export default function CatEditForm() {
           placeholder="Age"
           required
         />
+        </div>
+        <div className='form-group'>
         <label htmlFor="member_since">Member Since:</label>
         <input
           id="member_since"
@@ -87,6 +94,8 @@ export default function CatEditForm() {
           onChange={handleTextChange}
           required
         />
+        </div>
+        <div className='form-group'>
       <label htmlFor="hometown">Hometown:</label>
         <input
           id="hometown"
@@ -96,6 +105,8 @@ export default function CatEditForm() {
           placeholder='Hometown'
           required
         />
+        </div>
+        <div className='form-group'>
         <label htmlFor="breed">Breed:</label>
         <input
           id="breed"
@@ -105,6 +116,8 @@ export default function CatEditForm() {
           placeholder='Breed'
           required
         />
+        </div>
+        <div className='form-group'>
        <label htmlFor="image">image:</label>
         <input
           id="image"
@@ -112,8 +125,8 @@ export default function CatEditForm() {
           type="text"
           onChange={handleTextChange}
           placeholder='Image URL'
-          required
         />
+        </div>
         <br />
         <input type="submit" />
       </form>

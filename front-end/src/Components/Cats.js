@@ -16,9 +16,9 @@ export default function Cats() {
     }, []);
 
   return (
-    <div>
+    <div className="cats">
       <table>
-<tbody>
+<tbody className="grid">
     {cats.map((cat) => {
          return <Cat key={cat.id} cat={cat}/>
       })}

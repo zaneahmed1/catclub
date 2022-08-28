@@ -42,6 +42,7 @@ export default function CatNewForm() {
   return (
     <div className="New">
       <form onSubmit={handleSubmit}>
+        <div className='form-group'>
         <label htmlFor="name">Name:</label>
         <input
           id="name"
@@ -51,6 +52,8 @@ export default function CatNewForm() {
           placeholder="Name of Cat"
           required
         />
+        </div>
+        <div className='form-group'>
         <label htmlFor="parent_name">Parent/Guardian Name:</label>
         <input
           id="parent_name"
@@ -60,6 +63,8 @@ export default function CatNewForm() {
           placeholder="Name of Parent/Guardian"
           required
         />
+         </div>
+         <div className='form-group'>
         <label htmlFor="age">Age:</label>
         <input
           id="age"
@@ -69,6 +74,8 @@ export default function CatNewForm() {
           placeholder="Age"
           required
         />
+        </div>
+        <div className='form-group'>
         <label htmlFor="member_since">Member Since:</label>
         <input
           id="member_since"
@@ -77,6 +84,8 @@ export default function CatNewForm() {
           onChange={handleTextChange}
           required
         />
+        </div>
+        <div className='form-group'>
       <label htmlFor="hometown">Hometown:</label>
         <input
           id="hometown"
@@ -86,6 +95,8 @@ export default function CatNewForm() {
           placeholder='Hometown'
           required
         />
+        </div>
+        <div className='form-group'>
         <label htmlFor="breed">Breed:</label>
         <input
           id="breed"
@@ -95,6 +106,8 @@ export default function CatNewForm() {
           placeholder='Breed'
           required
         />
+        </div>
+        <div className='form-group'>
        <label htmlFor="image">image:</label>
         <input
           id="image"
@@ -103,6 +116,7 @@ export default function CatNewForm() {
           onChange={handleTextChange}
           placeholder='Image URL'
         />
+        </div>
         <br />
         <input type="submit" />
       </form>
