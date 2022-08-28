@@ -1,7 +1,10 @@
 import React from 'react'
+import CatEditForm from "../Components/CatEditForm"
 
 export default function Edit() {
   return (
-    <div>Edit</div>
+    <div>
+      <CatEditForm/>
+    </div>
   )
 }

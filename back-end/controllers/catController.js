@@ -22,7 +22,7 @@ cats.get("/", async (req,res) => {
 
 cats.get("/:id", async (req, res) => {
     const { id } = req.params;
-    const cat = await getcat(id);
+    const cat = await getCat(id);
     if(cat.id){
         res.status(200).json(cat);
     } else {
