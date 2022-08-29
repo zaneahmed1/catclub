@@ -1,14 +1,16 @@
 nav {
-    background-color: rgb(238, 187, 249);
+    background-color: #f9e4ff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2em;
 }
 h1{
-    font-family: Comic Sans MS;
-    color:lightcyan
+    font-family: Marker Felt, fantasy;
+    color: #afadd9
 }
+
+
 .navlink a:hover{
     color: paleturquoise;
     text-decoration: none;

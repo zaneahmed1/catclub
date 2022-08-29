@@ -27,13 +27,14 @@ export default function CatDetails() {
   const handleDelete = () => {
     deleteCat();
   };
+  const formattedDate = new Date(cat.member_since).toDateString()
 
   return (
     <div>
         <h5>{cat.name}</h5>
         <h6>Parent/Guardian Name: {cat.parent_name}</h6>
         <h6>Age: {cat.age}</h6>
-        <h6>Member Since: {cat.member_since}</h6>
+        <h6>Member Since: {formattedDate}</h6>
         <h6>Breed: {cat.breed}</h6>
         <h6>Hometown: {cat.hometown}</h6>
         <img src={cat.image} alt={cat.name}  width="200" 

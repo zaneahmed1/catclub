@@ -6,7 +6,7 @@ import "./NavBar.css"
 export default function NavBar() {
   return (
     <nav className='navbar'>
-      <h1>Cat Club</h1>
+   <Link to="/"><h1>Cat Club</h1></Link>
       <div className='navlink'>
         <Link to="/cats">See Cats</Link>
       </div>
