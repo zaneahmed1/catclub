@@ -11,15 +11,20 @@ import Show from "./Pages/Show";
 
 // COMPONENTS
 import NavBar from "./Components/NavBar";
+import { UserProvider } from "./Providers/UserProvider";
+import { LoginPage } from "./Pages/LoginPage";
+import { LoggedInPage } from "./Pages/LoggedInPage";
 
 function App() {
   return (
     <div className="App">
+      <UserProvider>
       <Router>
         <NavBar />
         <main className="container">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<LoginPage/>} />
+            <Route path="/loggedInPage" element = { <LoggedInPage />} />
             <Route path="/cats" element={<Index />} />
             <Route path="/cats/new" element={<New />} />
             <Route exact path="/cats/:id" element={<Show />} />
@@ -28,6 +33,7 @@ function App() {
           </Routes>
         </main>
       </Router>
+      </UserProvider>
     </div>
   );
 }
