@@ -21,8 +21,8 @@ export const Login = () => {
       <section>
         <Home/>
         <div>
-          <button onClick={signInWithGoogle}>Sign in With google</button>
-          <button onClick={logOut}> sign out</button>
+          <button onClick={signInWithGoogle}>Sign in with Google</button>
+          <button onClick={logOut}> Sign Out</button>
       </div>
       </section>
 
