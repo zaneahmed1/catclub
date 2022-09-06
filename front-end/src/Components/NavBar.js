@@ -8,6 +8,9 @@ export default function NavBar() {
   return (
     <nav className='navbar'>
    <Link to="/"><img className='logo' src={catclublogo} /></Link>
+   <div className='navlink'>
+        <Link to="/about">About</Link>
+      </div>
       <div className='navlink'>
         <Link to="/cats">See Cats</Link>
       </div>

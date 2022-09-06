@@ -6,7 +6,9 @@ export default function Cat({cat}) {
     <div>
       <tr>
         <td className='catcard'>
+          <div className='catname'>
       <Link to={`/cats/${cat.id}`}>{cat.name}</Link>
+          </div> 
       <br></br>
       <img src={cat.image} alt={cat.name}  width="120" 
      height="120"/>

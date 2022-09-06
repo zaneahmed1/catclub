@@ -39,7 +39,7 @@ export default function CatDetails() {
         <h6><b>Hometown:</b> {cat.hometown}</h6>
         <img src={cat.image} alt={cat.name}  width="220" 
      height="220"/>
-        <div>
+        <div className='detailbuttons'>
           <div>
             {" "}
             <Link to={`/cats`}>
