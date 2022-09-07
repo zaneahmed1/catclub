@@ -1,4 +1,3 @@
-\c cats_dev
 
 INSERT INTO cats (name, parent_name, age, member_since, hometown, breed, image) VALUES
 ('Cali', 'Zane', 2, '2022-08-26', 'Brooklyn', 'American Longhair', 'https://i.imgur.com/cFODfNb.jpeg'),
