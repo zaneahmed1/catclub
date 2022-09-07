@@ -1,5 +1,4 @@
-DROP DATABASE IF EXISTS cats_dev;
-CREATE DATABASE cats_dev;
+
 \c cats_dev;
 
 CREATE TABLE cats (
