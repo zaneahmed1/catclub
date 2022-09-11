@@ -1,5 +1,5 @@
 // Import the functions you need from the SDKs you need
-// import { initializeApp } from "firebase/app";
+import { initializeApp } from "firebase/app";
 import {GoogleAuthProvider, signInWithPopup, getAuth, signOut} from "firebase/auth"
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -15,10 +15,9 @@ const firebaseConfig = {
   appId: "1:1061390948923:web:61508ba2c13b4a3c601a1e",
   measurementId: "G-XRPHEFY31P"
 };
-console.log(firebaseConfig)
 
 // Initialize Firebase
-// const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth();
 auth.useDeviceLanguage();
