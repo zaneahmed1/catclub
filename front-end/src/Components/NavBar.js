@@ -7,7 +7,7 @@ import catclublogo from "../catclublogo.png"
 export default function NavBar() {
   return (
     <nav className='navbar'>
-   <Link to="/"><img className='logo' src={catclublogo} /></Link>
+   <Link to="/"><img className='logo' src={catclublogo} alt="img"/></Link>
    <div className='navlink'>
         <Link to="/about">About</Link>
       </div>
