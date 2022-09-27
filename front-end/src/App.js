@@ -7,6 +7,7 @@ import FourOFour from "./Pages/FourOFour";
 import Index from "./Pages/Index";
 import New from "./Pages/New";
 import Show from "./Pages/Show";
+import Home from "./Pages/Home"
 
 // COMPONENTS
 import NavBar from "./Components/NavBar";
@@ -23,7 +24,7 @@ function App() {
         <NavBar />
         <main className="container">
           <Routes>
-            <Route path="/" element={<LoginPage/>} />
+            <Route path="/" element={<Home/>} />
             <Route path="/loggedInPage" element = { <LoggedInPage />} />
             <Route path="/about" element={<About />} />
             <Route path="/cats" element={<Index />} />

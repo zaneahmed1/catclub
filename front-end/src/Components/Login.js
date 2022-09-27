@@ -21,11 +21,11 @@ export const Login = () => {
   return (
     <div>
       <section>
-        <Home/>
         <div>
           <Button onClick={signInWithGoogle}>Sign in with Google</Button>
           <Button onClick={logOut}> Sign Out</Button>
       </div>
+        {/* <Home/> */}
       </section>
 
     </div>
