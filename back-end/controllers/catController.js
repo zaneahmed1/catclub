@@ -10,7 +10,8 @@ const {
 } = require("../queries/cats");
 
 
-
+//every express route accepts a string as a route paramater(where we are listening) and an async function (what to do)
+//cats.get method creates a listener at the string that executes the callback 
 cats.get("/", async (req,res) => {
     const allCats = await getAllCats();
     if(allCats[0]){

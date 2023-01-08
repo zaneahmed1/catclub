@@ -1,0 +1,22 @@
+.main-display {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f3dcf9;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .main-right {
+    width: 50%;
+    background-image: url("../../public/catlady.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .main-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

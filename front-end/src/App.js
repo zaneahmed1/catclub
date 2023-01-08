@@ -21,7 +21,6 @@ function App() {
     <div className="App">
       <UserProvider>
       <Router>
-        <NavBar />
         <main className="container">
           <Routes>
             <Route path="/" element={<Home/>} />
