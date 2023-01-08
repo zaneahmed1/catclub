@@ -3,8 +3,7 @@ import { UserContext } from "../Providers/UserProvider";
 import { useNavigate } from "react-router-dom";
 import { signInWithGoogle, logOut } from "../Services/Firebase";
 import Home from "../Pages/Home"
-import Button from "react-bootstrap/Button"
-import 'bootstrap/dist/css/bootstrap.min.css'
+import "../Components/Login.css"
 
 
 
@@ -22,8 +21,8 @@ export const Login = () => {
     <div>
       <section>
         <div>
-          <Button onClick={signInWithGoogle}>Sign in with Google</Button>
-          <Button onClick={logOut}> Sign Out</Button>
+          <button className="button" onClick={signInWithGoogle}>Sign in with Google</button>
+          <button className="button"  onClick={logOut}> Sign Out</button>
       </div>
         {/* <Home/> */}
       </section>

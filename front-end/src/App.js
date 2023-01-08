@@ -21,7 +21,6 @@ function App() {
     <div className="App">
       <UserProvider>
       <Router>
-        <main className="container">
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/loggedInPage" element = { <LoggedInPage />} />
@@ -32,7 +31,6 @@ function App() {
             <Route path="/cats/:id/edit" element={<Edit />} />
             <Route path="*" element={<FourOFour />} />
           </Routes>
-        </main>
       </Router>
       </UserProvider>
     </div>
