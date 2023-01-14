@@ -1,0 +1,109 @@
+.home{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f3dcf9;
+    display: flex;
+    justify-content: space-between;
+    max-height: 100vh;
+    overflow: hidden;
+
+    &__left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__right{
+        width: 50%;
+        background-image: url("../../public/catlady.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    &__logo{
+        width: 100%;
+        display: flex;
+    }
+    &__logo img{
+        height: 200px;
+        margin-top: 20px;
+    }
+    &__text{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 15%;
+        margin-left: 200px;
+    }
+    &__text h1 {
+        font-family: 'Lilita One', cursive;
+        color: #b191ff;
+        font-size: 100px;
+        font-weight: 300;
+    }
+    &__text h2{
+        font-family: 'Varela Round', sans-serif;
+        color: #000000;
+        font-size: 50px;
+        margin-left: 90px;
+        margin-top: -40px;
+        font-weight: 50;
+    }
+    &__buttons{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+    .home{
+        width: 480px;
+        height: 900px;
+        background-color: #f3dcf9;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+    
+        &__left{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        // &__right{
+        //     width: 50%;
+        //     background-image: url("../../public/catlady.jpg");
+        //     background-repeat: no-repeat;
+        //     background-size: cover;
+        //     background-position: center;
+        // }
+        &__logo{
+            width: 100%;
+            display: flex;
+        }
+        &__logo img{
+            height: 100px;
+            margin-top: 10px;
+        }
+        &__text{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-left: 10px;
+        }
+        &__text h1 {
+            font-family: 'Lilita One', cursive;
+            color: #b191ff;
+            font-size: 50px;
+            font-weight: 300;
+        }
+        &__text h2{
+            font-family: 'Varela Round', sans-serif;
+            color: #000000;
+            font-size: 20px;
+            margin-left: 10px;
+            font-weight: 50;
+        }
+        &__buttons{
+            margin-left: -30px;
+        }
+    }
+}

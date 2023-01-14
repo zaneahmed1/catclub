@@ -1,0 +1,33 @@
+.about{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f3dcf9;
+    display: flex;
+    justify-content: space-between;
+    max-height: 100vh;
+    overflow: hidden;
+    &__left{
+        width: 100%;
+        background-image: url("../cat-yawn.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    &__right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__right h1{
+       font-family: 'Lilita One', cursive;
+       color: #d563bd;
+       font-size: 80px;
+       font-weight: 200;
+    }
+    &__text{
+        padding: 50px 100px;
+        font-family: 'Varela Round', sans-serif;
+        color: #000000;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,30 @@
+.navbar{
+    width: 100%;
+    height: 10%;
+    background-color: #f3dcf9;
+    display: flex;
+    justify-content: space-between;
+
+    &__listitem{
+        float: left;
+        padding: 20px 50px;
+        font-family: 'Varela Round', sans-serif;
+    }
+    &__listitem a{
+        text-decoration: none;
+        color: #000000;
+        text-decoration: none;
+        font-size: 25px;
+    }
+    // &__listitem:link, &__listitem:hover, &__listitem:focus, &__listitem:active{
+    //     text-decoration: none;
+    // }
+    &__listitem a img{
+       height: 200px;
+       margin-top: -80px;
+    }
+}
+.navbar ul {
+    list-style-type: none;
+    padding-top: 30px;
+}

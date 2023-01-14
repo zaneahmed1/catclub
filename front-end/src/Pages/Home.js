@@ -1,25 +1,25 @@
 import React from 'react'
 import { Login } from '../Components/Login'
-import "../Pages/Home.css"
+import "../Pages/Home.scss"
 import logo from "../../src/catclublogo.png"
 
 export default function Home() {
   return (
-    <div className='main-display'>
-      <div className='main-left'>
-      <div className="logo">
-          <img src={logo} />
+    <div className='home'>
+      <div className='home__left'>
+      <div className="home__logo">
+          <img src={logo} alt="logo" />
         </div>
-        <div className='text-wrapper'>
+        <div className='home__text'>
         <h1>Join the Cat Club</h1>
         <h2>Where we love cats</h2>
         </div>
-        <div className='home-buttons'>
+        <div className='home__buttons'>
                  <Login/>
         </div>
  
       </div>
-      <div className='main-right'></div>
+      <div className='home__right'></div>
     </div>
   )
 }
