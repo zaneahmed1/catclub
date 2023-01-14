@@ -31,3 +31,32 @@
         font-size: 20px;
     }
 }
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+    .about{
+        background-color: #f3dcf9;
+        display: flex;
+        justify-content: space-between;
+        max-height: 100vh;
+        overflow: hidden;
+        &__right{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__right h1{
+           font-family: 'Lilita One', cursive;
+           color: #d563bd;
+           font-size: 50px;
+           font-weight: 200;
+           padding: 20px 30px;
+           text-align: center;
+        }
+        &__text{
+            padding: 0px 30px;
+            font-family: 'Varela Round', sans-serif;
+            color: #000000;
+            font-size: 20px;
+        }
+    }
+}
