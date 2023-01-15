@@ -1,0 +1,19 @@
+.cats{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f3dcf9;
+    display: flex;
+    justify-content: space-between;
+    max-height: 100vh;
+    overflow: hidden;
+    &__grid{
+   
+    }
+    &__griditem{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 100px;
+        grid-gap: 80px;
+    }
+
+}
