@@ -21,6 +21,7 @@ export default function Cats() {
     <div className="cats-wrapper">
       <NavBar />
     <div className="cats">
+    <h1>Meet Our Cats</h1>
 <div className="cats__grid">
   <div className="cats__griditem">
        {cats.map((cat) => {

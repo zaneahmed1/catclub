@@ -9,7 +9,7 @@ export default function Cat({cat}) {
           <div className='catcard__name'>
       <Link to={`/cats/${cat.id}`}>{cat.name}</Link>
           </div> 
-         <img className='catcard__image'src={cat.image} alt={cat.name}  width="235" height="200"/>
+         <img className='catcard__image'src={cat.image} alt={cat.name}  width="230" height="190"/>
    </div>
 
   )
