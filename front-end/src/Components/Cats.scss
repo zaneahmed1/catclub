@@ -1,19 +1,23 @@
-.cats{
+.cats-wrapper{
     width: 100vw;
     height: 100vh;
     background-color: #f3dcf9;
-    display: flex;
-    justify-content: space-between;
     max-height: 100vh;
-    overflow: hidden;
-    &__grid{
-   
-    }
+    overflow: scroll;
+    
+}
+.cats{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
     &__griditem{
+        padding-top: 10%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-auto-rows: 100px;
-        grid-gap: 80px;
+        grid-gap: 190px;
+        text-align: center;
     }
 
 }

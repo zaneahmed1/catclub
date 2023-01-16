@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import Cat from "./Cat";
 import "../Components/Cats.scss"
+import NavBar from "../Components/NavBar"
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -17,13 +18,16 @@ export default function Cats() {
     }, []);
 
   return (
+    <div className="cats-wrapper">
+      <NavBar />
     <div className="cats">
 <div className="cats__grid">
   <div className="cats__griditem">
        {cats.map((cat) => {
          return <Cat key={cat.id} cat={cat}/>
-      })}
+        })}
   </div>
+        </div>
 
 
 </div>

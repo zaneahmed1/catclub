@@ -9,12 +9,16 @@
         float: left;
         padding: 20px 50px;
         font-family: 'Varela Round', sans-serif;
+        text-align: center;
+
     }
     &__listitem a{
         text-decoration: none;
         color: #000000;
-        text-decoration: none;
         font-size: 25px;
+    }
+    &__listitem a:hover{
+        color: #d563bd;
     }
     // &__listitem:link, &__listitem:hover, &__listitem:focus, &__listitem:active{
     //     text-decoration: none;

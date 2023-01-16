@@ -1,0 +1,19 @@
+.catcard{
+    &__name{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    &__name a{
+        text-decoration: none;
+        font-family: 'Varela Round', sans-serif;
+        color: #000000;
+        font-size: 20px;
+    }
+    &__name a:hover{
+        color: #d563bd;
+    }
+    &__image{
+        border-radius: 20px;
+    }
+
+}

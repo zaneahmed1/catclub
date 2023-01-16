@@ -1,19 +1,16 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import "../Components/Cat.scss"
 
 export default function Cat({cat}) {
   return (
-    <div>
-      <tr>
-        <td className='catcard'>
-          <div className='catname'>
+
+        <div className='catcard'>
+          <div className='catcard__name'>
       <Link to={`/cats/${cat.id}`}>{cat.name}</Link>
           </div> 
-      <br></br>
-      <img src={cat.image} alt={cat.name}  width="120" 
-     height="120"/>
-        </td>
-      </tr>
-    </div>
+         <img className='catcard__image'src={cat.image} alt={cat.name}  width="235" height="200"/>
+   </div>
+
   )
 }
