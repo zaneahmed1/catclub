@@ -2,7 +2,8 @@ import React from 'react'
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
-
+import "../Components/CatDetails.scss"
+import NavBar from "../Components/NavBar"
 
 export default function CatDetails() {
   
@@ -30,31 +31,35 @@ export default function CatDetails() {
   const formattedDate = new Date(cat.member_since).toDateString()
 
   return (
+    <div className='details-wrapper'>
+      <NavBar/>         
+       <h1><b>Meet {cat.name}</b></h1>
     <div className='details'>
-        <h3><b>{cat.name}</b></h3>
-        <h6><b>Parent/Guardian Name:</b> {cat.parent_name}</h6>
-        <h6><b>Age:</b> {cat.age}</h6>
-        <h6><b>Member Since:</b> {formattedDate}</h6>
-        <h6><b>Breed:</b> {cat.breed}</h6>
-        <h6><b>Hometown:</b> {cat.hometown}</h6>
-        <img src={cat.image} alt={cat.name}  width="220" 
-     height="220"/>
-        <div className='detailbuttons'>
-          <div>
+      <div className='details__info-left'>
+      
+        <h3><b>Parent/Guardian Name:</b> {cat.parent_name}</h3>
+        <h3><b>Age:</b> {cat.age}</h3>
+        <h3><b>Member Since:</b> {formattedDate}</h3>
+        <h3><b>Breed:</b> {cat.breed}</h3>
+        <h3><b>Hometown:</b> {cat.hometown}</h3>
+       
+      </div>
+      <div className='details__info-right'> 
+      <img src={cat.image} alt={cat.name}  width="300" 
+     height="250"/>
+ <div className='details__buttons'>
             {" "}
             <Link to={`/cats`}>
               <button>Back</button>
             </Link>
-          </div>
-          <div>
             <Link to={`/cats/${id}/edit`}>
               <button>Edit</button>
             </Link>
-          </div>
-          <div>
             <button onClick={handleDelete}>Delete</button>
-          </div>
+
         </div>
+      </div>
+      </div>
       </div>
   )
 }

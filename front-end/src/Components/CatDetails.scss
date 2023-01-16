@@ -1,0 +1,42 @@
+.details-wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f3dcf9;
+    max-height: 100vh;
+    overflow: hidden;
+}
+.details-wrapper h1{
+    text-align: center;
+    font-family: 'Lilita One', cursive;
+    color: #d563bd;
+    font-size: 40px;
+    font-weight: 200;
+}
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    &__info-left{
+        align-items: center;
+        background-color:  #d563bd;
+        border-radius: 20px;
+        height: 250px;
+        border: 10px solid #b191ff;;
+    }
+    &__info-left h3{
+        font-family: 'Varela Round', sans-serif;
+        color: #000000;
+        font-size: 20px;
+    }
+    &__info-right{
+        align-items: center;
+        padding-left: 2%;
+    }
+    &__info-right img{
+        border-radius: 20px;
+    }
+    &__buttons{
+        align-items: center;
+    }
+}
