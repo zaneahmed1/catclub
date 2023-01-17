@@ -9,34 +9,128 @@
     text-align: center;
     font-family: 'Lilita One', cursive;
     color: #d563bd;
-    font-size: 40px;
+    font-size: 80px;
     font-weight: 200;
 }
 .details{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     padding: 20px;
     &__info-left{
         align-items: center;
         background-color:  #d563bd;
-        border-radius: 20px;
-        height: 250px;
-        border: 10px solid #b191ff;;
+        border-radius: 90px;
+        height: 550px;
+        width: 600px;
+        border: 15px solid #b191ff;
+        text-align: center;
+        flex-direction: column;
     }
-    &__info-left h3{
+    &__text{
+        padding-top: 10%;
+        flex-direction: column;
+    }
+    &__text h2 b{
+       color:black;
+    }
+    &__info-left h2{
         font-family: 'Varela Round', sans-serif;
-        color: #000000;
-        font-size: 20px;
+        color:#f3dcf9;
+        font-size: 30px;
     }
     &__info-right{
         align-items: center;
         padding-left: 2%;
     }
-    &__info-right img{
-        border-radius: 20px;
-    }
     &__buttons{
         align-items: center;
+        padding-top: 10%;
     }
+    &__buttons a{
+        padding: 2%;
+    }
+    &__buttons button{
+        font-family: 'Varela Round', sans-serif;
+        color: #000000;
+        border-radius: 15px;
+        cursor: pointer;
+        font-size: 18px;
+        padding: 5px;
+    }
+    &__buttons button:hover{
+        background-color:#f3dcf9;
+        transition: 0.3s;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+    .details-wrapper{
+        background-color: #f3dcf9;
+        max-height: 100vh;
+        overflow: hidden;
+    }
+    .details-wrapper h1{
+        text-align: center;
+        font-family: 'Lilita One', cursive;
+        color: #d563bd;
+        font-size: 40px;
+        font-weight: 200;
+        padding-top: 20%;
+    }
+    .details{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        &__info-left{
+            align-items: center;
+            background-color:  #d563bd;
+            border-radius: 90px;
+            height: 400px;
+            width: 450px;
+            border: 10px solid #b191ff;
+            text-align: center;
+            flex-direction: column;
+        }
+        &__text{
+            padding-top: 15%;
+
+        }
+        &__text h2 b{
+           color:black;
+        }
+        &__info-left h2{
+            font-family: 'Varela Round', sans-serif;
+            color:#f3dcf9;
+            font-size: 18px;
+        }
+        &__info-right{
+            align-items: center;
+
+        }
+        &__info-right img{
+            // width: 90px;
+            // height: 100px;
+            display: none;
+        }
+        &__buttons{
+            align-items: center;
+            padding-top: 10%;
+        }
+        &__buttons a{
+            padding: 2%;
+        }
+        &__buttons button{
+            font-family: 'Varela Round', sans-serif;
+            color: #000000;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 15px;
+            padding: 5px;
+        }
+        &__buttons button:hover{
+            background-color:#f3dcf9;
+            transition: 0.3s;
+        }
+    }
+    
 }

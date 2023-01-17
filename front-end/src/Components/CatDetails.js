@@ -36,19 +36,15 @@ export default function CatDetails() {
        <h1><b>Meet {cat.name}</b></h1>
     <div className='details'>
       <div className='details__info-left'>
-      
-        <h3><b>Parent/Guardian Name:</b> {cat.parent_name}</h3>
-        <h3><b>Age:</b> {cat.age}</h3>
-        <h3><b>Member Since:</b> {formattedDate}</h3>
-        <h3><b>Breed:</b> {cat.breed}</h3>
-        <h3><b>Hometown:</b> {cat.hometown}</h3>
-       
-      </div>
-      <div className='details__info-right'> 
-      <img src={cat.image} alt={cat.name}  width="300" 
-     height="250"/>
+        <div className='details__text'>
+          <h2><b>Parent/Guardian Name:</b> {cat.parent_name}</h2>
+        <h2><b>Age:</b> {cat.age}</h2>
+        <h2><b>Member Since:</b> {formattedDate}</h2>
+        <h2><b>Breed:</b> {cat.breed}</h2>
+        <h2><b>Hometown:</b> {cat.hometown}</h2>
+        </div>
+        
  <div className='details__buttons'>
-            {" "}
             <Link to={`/cats`}>
               <button>Back</button>
             </Link>
@@ -58,6 +54,11 @@ export default function CatDetails() {
             <button onClick={handleDelete}>Delete</button>
 
         </div>
+       
+      </div>
+      <div className='details__info-right'> 
+      <img src={cat.image} alt={cat.name}  width="600" 
+     height="550"/>
       </div>
       </div>
       </div>
