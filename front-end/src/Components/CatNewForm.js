@@ -2,6 +2,8 @@ import React from 'react'
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import NavBar from './NavBar';
+import "../Components/CatForm.scss"
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -40,7 +42,10 @@ export default function CatNewForm() {
   };
 
   return (
-    <div className="New">
+    <div className="newForm-wrapper">
+      <NavBar/>
+      <div className='newForm'>
+
       <form onSubmit={handleSubmit}>
         <div className='form-group'>
         <label htmlFor="name">Name:</label>
@@ -51,7 +56,7 @@ export default function CatNewForm() {
           onChange={handleTextChange}
           placeholder="Name of Cat"
           required
-        />
+          />
         </div>
         <div className='form-group'>
         <label htmlFor="parent_name">Parent/Guardian Name:</label>
@@ -62,7 +67,7 @@ export default function CatNewForm() {
           onChange={handleTextChange}
           placeholder="Name of Parent/Guardian"
           required
-        />
+          />
          </div>
          <div className='form-group'>
         <label htmlFor="age">Age:</label>
@@ -73,7 +78,7 @@ export default function CatNewForm() {
           onChange={handleTextChange}
           placeholder="Age"
           required
-        />
+          />
         </div>
         <div className='form-group'>
         <label htmlFor="member_since">Member Since:</label>
@@ -83,7 +88,7 @@ export default function CatNewForm() {
           type="date"
           onChange={handleTextChange}
           required
-        />
+          />
         </div>
         <div className='form-group'>
       <label htmlFor="hometown">Hometown:</label>
@@ -94,7 +99,7 @@ export default function CatNewForm() {
           onChange={handleTextChange}
           placeholder='Hometown'
           required
-        />
+          />
         </div>
         <div className='form-group'>
         <label htmlFor="breed">Breed:</label>
@@ -105,7 +110,7 @@ export default function CatNewForm() {
           onChange={handleTextChange}
           placeholder='Breed'
           required
-        />
+          />
         </div>
         <div className='form-group'>
        <label htmlFor="image">image:</label>
@@ -115,11 +120,12 @@ export default function CatNewForm() {
           type="text"
           onChange={handleTextChange}
           placeholder='Image URL'
-        />
+          />
         </div>
         <br />
         <input type="submit" />
       </form>
+          </div>
     </div>
   );
 }
