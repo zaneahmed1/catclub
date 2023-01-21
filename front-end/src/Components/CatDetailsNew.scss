@@ -1,0 +1,28 @@
+.details-wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f3dcf9;
+    max-height: 100vh;
+    overflow: hidden;
+
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+        text-align: center;
+        align-items: center;
+        &___info{
+            border: 5px solid black;
+        }
+        &___image{
+           border: 5px solid orange;
+           width: 400px;
+           height: 500px;
+           border-radius: 100%;
+        }
+    }
+
+
+

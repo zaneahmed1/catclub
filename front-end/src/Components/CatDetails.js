@@ -2,7 +2,7 @@ import React from 'react'
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
-import "../Components/CatDetails.scss"
+import "../Components/CatDetailsNew.scss"
 import NavBar from "../Components/NavBar"
 
 export default function CatDetails() {
@@ -33,34 +33,37 @@ export default function CatDetails() {
   return (
     <div className='details-wrapper'>
       <NavBar/>         
-       <h1><b>Meet {cat.name}</b></h1>
     <div className='details'>
-      <div className='details__info-left'>
+      <div className='details___info'>
+      <div className='details___image' style ={ { backgroundImage: `url(${cat.image})` } }>
+       {/* <img src={cat.image} alt={cat.name}  width="600" 
+      height="550"/> */}
+        </div>
+      </div>
         <div className='details__text'>
-          <h2><b>Parent/Guardian Name:</b> {cat.parent_name}</h2>
+       {/* <h1><b>Meet {cat.name}</b></h1> */}
+          {/* <h2><b>Parent/Guardian Name:</b> {cat.parent_name}</h2>
         <h2><b>Age:</b> {cat.age}</h2>
         <h2><b>Member Since:</b> {formattedDate}</h2>
         <h2><b>Breed:</b> {cat.breed}</h2>
-        <h2><b>Hometown:</b> {cat.hometown}</h2>
+      <h2><b>Hometown:</b> {cat.hometown}</h2> */}
         </div>
         
- <div className='details__buttons'>
+ {/* <div className='details__buttons'>
             <Link to={`/cats`}>
-              <button>Back</button>
+            <button>Back</button>
             </Link>
             <Link to={`/cats/${id}/edit`}>
-              <button>Edit</button>
+            <button>Edit</button>
             </Link>
             <button onClick={handleDelete}>Delete</button>
-
-        </div>
+            
+          </div> */}
        
       </div>
-      <div className='details__info-right'> 
-      <img src={cat.image} alt={cat.name}  width="600" 
-     height="550"/>
+   
+
       </div>
-      </div>
-      </div>
+
   )
 }

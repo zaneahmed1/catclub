@@ -18,11 +18,11 @@
     padding: 20px;
     &__info-left{
         align-items: center;
-        background-color:  #d563bd;
-        border-radius: 90px;
-        height: 550px;
-        width: 600px;
-        border: 15px solid #b191ff;
+        // background-color:  #d563bd;
+        // border-radius: 90px;
+        // height: 550px;
+        // width: 600px;
+        // border: 15px solid #b191ff;
         text-align: center;
         flex-direction: column;
     }
@@ -35,12 +35,17 @@
     }
     &__info-left h2{
         font-family: 'Varela Round', sans-serif;
-        color:#f3dcf9;
+        color:black;
         font-size: 30px;
     }
     &__info-right{
         align-items: center;
         padding-left: 2%;
+      
+    }
+    &__info-right img {
+        border: 10px black solid;
+        border-radius: 25px;
     }
     &__buttons{
         align-items: center;
@@ -83,11 +88,7 @@
         padding: 20px;
         &__info-left{
             align-items: center;
-            background-color:  #d563bd;
-            border-radius: 90px;
-            height: 400px;
-            width: 450px;
-            border: 10px solid #b191ff;
+       
             text-align: center;
             flex-direction: column;
         }
