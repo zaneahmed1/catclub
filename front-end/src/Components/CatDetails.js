@@ -35,11 +35,11 @@ export default function CatDetails() {
       <NavBar/>         
     <div className='details'>
       <div className='details___info'>
+        </div>
       <div className='details___image' style ={ { backgroundImage: `url(${cat.image})` } }>
        {/* <img src={cat.image} alt={cat.name}  width="600" 
       height="550"/> */}
         </div>
-      </div>
         <div className='details__text'>
        {/* <h1><b>Meet {cat.name}</b></h1> */}
           {/* <h2><b>Parent/Guardian Name:</b> {cat.parent_name}</h2>

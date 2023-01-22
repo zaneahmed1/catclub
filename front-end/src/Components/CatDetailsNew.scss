@@ -11,16 +11,25 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 100px;
         text-align: center;
         align-items: center;
         &___info{
-            border: 5px solid black;
+            width: 500px;
+            height: 750px;
+            margin-bottom: -500px;
+            background-color: rgb(245, 240, 251);
+            z-index:1; 
+            position: absolute;
+            border-radius: 30px;
         }
         &___image{
-           border: 5px solid orange;
-           width: 400px;
-           height: 500px;
+           background-size: 200px 250px;
+           width: 200px;
+           height: 250px;
+           margin-bottom: 150px;
            border-radius: 100%;
+           z-index:2;
         }
     }
 
